@@ -1,0 +1,7 @@
+## template: jinja
+#cloud-config
+
+runcmd:
+  - echo Cloud-init version
+  - cloud-init --version
+  - echo I am {{ v1.instance_id }}
